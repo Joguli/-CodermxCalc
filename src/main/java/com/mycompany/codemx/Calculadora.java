@@ -33,7 +33,6 @@ public class Calculadora extends javax.swing.JFrame {
         txtResultado = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
@@ -77,17 +76,7 @@ public class Calculadora extends javax.swing.JFrame {
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
         jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 50, 50));
-
-        jButton3.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(55, 62, 71));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton3.setText("C");
-        jButton3.setFocusPainted(false);
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 50, 50));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 50));
 
         jButton4.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton4.setForeground(new java.awt.Color(55, 62, 71));
@@ -117,7 +106,7 @@ public class Calculadora extends javax.swing.JFrame {
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
         jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
-        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 50, 50));
+        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, 50, 50));
 
         jButton7.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton7.setForeground(new java.awt.Color(55, 62, 71));
@@ -127,7 +116,7 @@ public class Calculadora extends javax.swing.JFrame {
         jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
         jButton7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
-        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, 50, 50));
+        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 90, 50, 50));
 
         jButton8.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton8.setForeground(new java.awt.Color(55, 62, 71));
@@ -137,7 +126,7 @@ public class Calculadora extends javax.swing.JFrame {
         jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton8.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
         jButton8.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
-        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 50, 50));
+        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 50, 50));
 
         jButton9.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton9.setForeground(new java.awt.Color(55, 62, 71));
@@ -147,7 +136,7 @@ public class Calculadora extends javax.swing.JFrame {
         jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
         jButton9.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
-        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, 50, 50));
+        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, 50, 50));
 
         jButton10.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton10.setForeground(new java.awt.Color(55, 62, 71));
@@ -157,7 +146,7 @@ public class Calculadora extends javax.swing.JFrame {
         jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton10.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
         jButton10.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
-        jPanel2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 50, 50));
+        jPanel2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 50, 50));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 340, 380));
 
@@ -202,7 +191,6 @@ public class Calculadora extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
