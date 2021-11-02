@@ -27,11 +27,23 @@ public class Calculadora extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         txtOperaciom = new javax.swing.JLabel();
         txtResultado = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -40,27 +52,114 @@ public class Calculadora extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtOperaciom.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        txtOperaciom.setForeground(new java.awt.Color(55, 62, 71));
         txtOperaciom.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         txtOperaciom.setText("5*6+2");
         jPanel1.add(txtOperaciom, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 320, 38));
 
         txtResultado.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        txtResultado.setForeground(new java.awt.Color(55, 62, 71));
         txtResultado.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         txtResultado.setText("583");
         txtResultado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel1.add(txtResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 67, 320, 52));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, -1));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 50));
+        jButton2.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(55, 62, 71));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton2.setText("C");
+        jButton2.setFocusPainted(false);
+        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 50, 50));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 340, 370));
+        jButton3.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(55, 62, 71));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton3.setText("C");
+        jButton3.setFocusPainted(false);
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 50, 50));
+
+        jButton4.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(55, 62, 71));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton4.setText("C");
+        jButton4.setFocusPainted(false);
+        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 50, 50));
+
+        jButton5.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(55, 62, 71));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton5.setText("C");
+        jButton5.setFocusPainted(false);
+        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 50, 50));
+
+        jButton6.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(55, 62, 71));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton6.setText("C");
+        jButton6.setFocusPainted(false);
+        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 50, 50));
+
+        jButton7.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(55, 62, 71));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton7.setText("C");
+        jButton7.setFocusPainted(false);
+        jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, 50, 50));
+
+        jButton8.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(55, 62, 71));
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton8.setText("C");
+        jButton8.setFocusPainted(false);
+        jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton8.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton8.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 50, 50));
+
+        jButton9.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(55, 62, 71));
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton9.setText("C");
+        jButton9.setFocusPainted(false);
+        jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton9.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, 50, 50));
+
+        jButton10.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(55, 62, 71));
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton10.setText("C");
+        jButton10.setFocusPainted(false);
+        jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton10.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton10.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jPanel2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 50, 50));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 340, 380));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -101,9 +200,18 @@ public class Calculadora extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel txtOperaciom;
     private javax.swing.JLabel txtResultado;
     // End of variables declaration//GEN-END:variables
