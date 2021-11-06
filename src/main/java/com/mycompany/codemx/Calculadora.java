@@ -4,9 +4,11 @@ package com.mycompany.codemx;
 public class Calculadora extends javax.swing.JFrame {
 
   
+    
     public Calculadora() {
         initComponents();
         setLocationRelativeTo(null);
+         
     }
 
     @SuppressWarnings("unchecked")
@@ -70,12 +72,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton2.setForeground(new java.awt.Color(55, 62, 71));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         jButton2.setText("4");
         jButton2.setFocusPainted(false);
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton2.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton2.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -85,12 +87,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jButton4.setForeground(new java.awt.Color(55, 62, 71));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
         jButton4.setText("^");
         jButton4.setFocusPainted(false);
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton4.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton4.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -100,12 +102,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton5.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jButton5.setForeground(new java.awt.Color(55, 62, 71));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
         jButton5.setText("%");
         jButton5.setFocusPainted(false);
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton5.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton5.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -115,12 +117,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton6.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jButton6.setForeground(new java.awt.Color(55, 62, 71));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
         jButton6.setText("/");
         jButton6.setFocusPainted(false);
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton6.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton6.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -130,12 +132,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton7.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jButton7.setForeground(new java.awt.Color(55, 62, 71));
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
         jButton7.setText("x");
         jButton7.setFocusPainted(false);
         jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton7.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton7.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -145,12 +147,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton8.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn5.png"))); // NOI18N
+        jButton8.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn5.png")); // NOI18N
         jButton8.setText("=");
         jButton8.setFocusPainted(false);
         jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton8.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton8.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton8.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton8.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -160,12 +162,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton9.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jButton9.setForeground(new java.awt.Color(55, 62, 71));
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton9.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
         jButton9.setText("-");
         jButton9.setFocusPainted(false);
         jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton9.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton9.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton9.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -175,12 +177,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton10.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jButton10.setForeground(new java.awt.Color(55, 62, 71));
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton10.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
         jButton10.setText("+");
         jButton10.setFocusPainted(false);
         jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton10.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton10.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton10.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton10.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
@@ -190,12 +192,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jButton3.setForeground(new java.awt.Color(55, 62, 71));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
         jButton3.setText("C");
         jButton3.setFocusPainted(false);
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton3.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton3.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -205,12 +207,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton12.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton12.setForeground(new java.awt.Color(55, 62, 71));
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        jButton12.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         jButton12.setText("7");
         jButton12.setFocusPainted(false);
         jButton12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton12.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton12.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton12.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton12.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
@@ -220,12 +222,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton13.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton13.setForeground(new java.awt.Color(55, 62, 71));
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        jButton13.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         jButton13.setText("8");
         jButton13.setFocusPainted(false);
         jButton13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton13.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton13.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton13.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton13.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
@@ -235,12 +237,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton14.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton14.setForeground(new java.awt.Color(55, 62, 71));
-        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        jButton14.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         jButton14.setText("9");
         jButton14.setFocusPainted(false);
         jButton14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton14.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton14.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton14.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton14.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14ActionPerformed(evt);
@@ -250,12 +252,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton15.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton15.setForeground(new java.awt.Color(55, 62, 71));
-        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        jButton15.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         jButton15.setText("5");
         jButton15.setFocusPainted(false);
         jButton15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton15.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton15.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton15.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton15.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton15ActionPerformed(evt);
@@ -265,12 +267,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton16.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton16.setForeground(new java.awt.Color(55, 62, 71));
-        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        jButton16.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         jButton16.setText("6");
         jButton16.setFocusPainted(false);
         jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton16.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton16.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton16.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton16.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton16ActionPerformed(evt);
@@ -280,12 +282,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton17.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton17.setForeground(new java.awt.Color(55, 62, 71));
-        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        jButton17.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         jButton17.setText("3");
         jButton17.setFocusPainted(false);
         jButton17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton17.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton17.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton17.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton17.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
@@ -295,12 +297,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton18.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton18.setForeground(new java.awt.Color(55, 62, 71));
-        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        jButton18.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         jButton18.setText("2");
         jButton18.setFocusPainted(false);
         jButton18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton18.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton18.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton18.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton18.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton18ActionPerformed(evt);
@@ -310,12 +312,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton19.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton19.setForeground(new java.awt.Color(55, 62, 71));
-        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        jButton19.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         jButton19.setText("1");
         jButton19.setFocusPainted(false);
         jButton19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton19.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton19.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton19.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton19.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton19ActionPerformed(evt);
@@ -325,12 +327,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton20.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton20.setForeground(new java.awt.Color(55, 62, 71));
-        jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        jButton20.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         jButton20.setText("0");
         jButton20.setFocusPainted(false);
         jButton20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton20.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton20.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton20.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton20.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton20ActionPerformed(evt);
@@ -340,12 +342,12 @@ public class Calculadora extends javax.swing.JFrame {
 
         jButton21.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jButton21.setForeground(new java.awt.Color(55, 62, 71));
-        jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        jButton21.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         jButton21.setText(".");
         jButton21.setFocusPainted(false);
         jButton21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton21.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn1.png"))); // NOI18N
-        jButton21.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn2.png"))); // NOI18N
+        jButton21.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        jButton21.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton21ActionPerformed(evt);
@@ -440,6 +442,7 @@ public class Calculadora extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+        System.out.println("Aqui.");
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -458,14 +461,15 @@ public class Calculadora extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        
+       
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Calculadora().setVisible(true);
             }
-        });
-    }
+            });
+    } 
+        
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton10;
@@ -493,4 +497,6 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JLabel txtOperaciom;
     private javax.swing.JLabel txtResultado;
     // End of variables declaration//GEN-END:variables
+   
+        
 }
