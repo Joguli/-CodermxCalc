@@ -1,9 +1,14 @@
 
 package com.mycompany.codemx;
 
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+
 public class Calculadora extends javax.swing.JFrame {
 
   
+    ScriptEngineManager sem = new ScriptEngineManager();
+    ScriptEngine se = sem.getEngineByName("JavaScript");
     
     public Calculadora() {
         initComponents();
@@ -20,25 +25,25 @@ public class Calculadora extends javax.swing.JFrame {
         txtOperaciom = new javax.swing.JLabel();
         txtResultado = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
+        btn4 = new javax.swing.JButton();
+        btn_exp = new javax.swing.JButton();
+        btn_percent = new javax.swing.JButton();
+        btn_division = new javax.swing.JButton();
+        btn_Multiplication = new javax.swing.JButton();
+        btn_equal = new javax.swing.JButton();
+        btn_subtraction = new javax.swing.JButton();
+        btn_Sum = new javax.swing.JButton();
+        btn_C = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        btn8 = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
+        btn5 = new javax.swing.JButton();
+        btn6 = new javax.swing.JButton();
+        btn3 = new javax.swing.JButton();
+        btn2 = new javax.swing.JButton();
+        btn1 = new javax.swing.JButton();
+        btn_0 = new javax.swing.JButton();
+        btn_dot = new javax.swing.JButton();
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -55,386 +60,390 @@ public class Calculadora extends javax.swing.JFrame {
         txtOperaciom.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         txtOperaciom.setForeground(new java.awt.Color(55, 62, 71));
         txtOperaciom.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        txtOperaciom.setText("5*6+2");
-        jPanel1.add(txtOperaciom, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 320, 38));
+        jPanel1.add(txtOperaciom, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 300, 38));
 
         txtResultado.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         txtResultado.setForeground(new java.awt.Color(55, 62, 71));
         txtResultado.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        txtResultado.setText("583");
         txtResultado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 67, 320, 52));
+        jPanel1.add(txtResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 300, 52));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, -1));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton2.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(55, 62, 71));
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
-        jButton2.setText("4");
-        jButton2.setFocusPainted(false);
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton2.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btn4.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btn4.setForeground(new java.awt.Color(55, 62, 71));
+        btn4.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
+        btn4.setText("4");
+        btn4.setFocusPainted(false);
+        btn4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn4.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn4.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btn4ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 50, 50));
+        jPanel2.add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 50, 50));
 
-        jButton4.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(55, 62, 71));
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton4.setText("^");
-        jButton4.setFocusPainted(false);
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton4.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btn_exp.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btn_exp.setForeground(new java.awt.Color(55, 62, 71));
+        btn_exp.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_exp.setText("^");
+        btn_exp.setFocusPainted(false);
+        btn_exp.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_exp.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_exp.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn_exp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btn_expActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 50, 50));
+        jPanel2.add(btn_exp, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 50, 50));
 
-        jButton5.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(55, 62, 71));
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton5.setText("%");
-        jButton5.setFocusPainted(false);
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton5.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btn_percent.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btn_percent.setForeground(new java.awt.Color(55, 62, 71));
+        btn_percent.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_percent.setText("%");
+        btn_percent.setFocusPainted(false);
+        btn_percent.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_percent.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_percent.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn_percent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btn_percentActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 50, 50));
+        jPanel2.add(btn_percent, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 50, 50));
 
-        jButton6.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(55, 62, 71));
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton6.setText("/");
-        jButton6.setFocusPainted(false);
-        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton6.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton6.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btn_division.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btn_division.setForeground(new java.awt.Color(55, 62, 71));
+        btn_division.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_division.setText("/");
+        btn_division.setFocusPainted(false);
+        btn_division.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_division.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_division.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_division.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btn_divisionActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, 50, 50));
+        jPanel2.add(btn_division, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, 50, 50));
 
-        jButton7.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(55, 62, 71));
-        jButton7.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton7.setText("x");
-        jButton7.setFocusPainted(false);
-        jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton7.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton7.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btn_Multiplication.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btn_Multiplication.setForeground(new java.awt.Color(55, 62, 71));
+        btn_Multiplication.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_Multiplication.setText("x");
+        btn_Multiplication.setFocusPainted(false);
+        btn_Multiplication.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_Multiplication.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_Multiplication.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn_Multiplication.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btn_MultiplicationActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 90, 50, 50));
+        jPanel2.add(btn_Multiplication, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 80, 50, 50));
 
-        jButton8.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn5.png")); // NOI18N
-        jButton8.setText("=");
-        jButton8.setFocusPainted(false);
-        jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton8.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton8.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        btn_equal.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btn_equal.setForeground(new java.awt.Color(255, 255, 255));
+        btn_equal.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn5.png")); // NOI18N
+        btn_equal.setText("=");
+        btn_equal.setFocusPainted(false);
+        btn_equal.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_equal.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_equal.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn_equal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                btn_equalActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 50, 50));
+        jPanel2.add(btn_equal, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 50, 50));
 
-        jButton9.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(55, 62, 71));
-        jButton9.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton9.setText("-");
-        jButton9.setFocusPainted(false);
-        jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton9.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton9.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        btn_subtraction.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btn_subtraction.setForeground(new java.awt.Color(55, 62, 71));
+        btn_subtraction.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_subtraction.setText("-");
+        btn_subtraction.setFocusPainted(false);
+        btn_subtraction.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_subtraction.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_subtraction.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn_subtraction.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                btn_subtractionActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 50, 50));
+        jPanel2.add(btn_subtraction, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, 50, 50));
 
-        jButton10.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(55, 62, 71));
-        jButton10.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton10.setText("+");
-        jButton10.setFocusPainted(false);
-        jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton10.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton10.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        btn_Sum.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btn_Sum.setForeground(new java.awt.Color(55, 62, 71));
+        btn_Sum.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_Sum.setText("+");
+        btn_Sum.setFocusPainted(false);
+        btn_Sum.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_Sum.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_Sum.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn_Sum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                btn_SumActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 50, 50));
+        jPanel2.add(btn_Sum, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 50, 50));
 
-        jButton3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(55, 62, 71));
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton3.setText("C");
-        jButton3.setFocusPainted(false);
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton3.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btn_C.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btn_C.setForeground(new java.awt.Color(55, 62, 71));
+        btn_C.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_C.setText("C");
+        btn_C.setFocusPainted(false);
+        btn_C.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_C.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_C.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn_C.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btn_CActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 50));
+        jPanel2.add(btn_C, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 50, 50));
 
-        jButton12.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(55, 62, 71));
-        jButton12.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
-        jButton12.setText("7");
-        jButton12.setFocusPainted(false);
-        jButton12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton12.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton12.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        btn7.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btn7.setForeground(new java.awt.Color(55, 62, 71));
+        btn7.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
+        btn7.setText("7");
+        btn7.setFocusPainted(false);
+        btn7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn7.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn7.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                btn7ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 50, 50));
+        jPanel2.add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 50, 50));
 
-        jButton13.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(55, 62, 71));
-        jButton13.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
-        jButton13.setText("8");
-        jButton13.setFocusPainted(false);
-        jButton13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton13.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton13.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        btn8.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btn8.setForeground(new java.awt.Color(55, 62, 71));
+        btn8.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
+        btn8.setText("8");
+        btn8.setFocusPainted(false);
+        btn8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn8.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn8.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                btn8ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 50, 50));
+        jPanel2.add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, 50, 50));
 
-        jButton14.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton14.setForeground(new java.awt.Color(55, 62, 71));
-        jButton14.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
-        jButton14.setText("9");
-        jButton14.setFocusPainted(false);
-        jButton14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton14.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton14.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        btn9.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btn9.setForeground(new java.awt.Color(55, 62, 71));
+        btn9.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
+        btn9.setText("9");
+        btn9.setFocusPainted(false);
+        btn9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn9.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn9.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                btn9ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 50, 50));
+        jPanel2.add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 50, 50));
 
-        jButton15.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton15.setForeground(new java.awt.Color(55, 62, 71));
-        jButton15.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
-        jButton15.setText("5");
-        jButton15.setFocusPainted(false);
-        jButton15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton15.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton15.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        btn5.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btn5.setForeground(new java.awt.Color(55, 62, 71));
+        btn5.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
+        btn5.setText("5");
+        btn5.setFocusPainted(false);
+        btn5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn5.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn5.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                btn5ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 50, 50));
+        jPanel2.add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 50, 50));
 
-        jButton16.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton16.setForeground(new java.awt.Color(55, 62, 71));
-        jButton16.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
-        jButton16.setText("6");
-        jButton16.setFocusPainted(false);
-        jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton16.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton16.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        btn6.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btn6.setForeground(new java.awt.Color(55, 62, 71));
+        btn6.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
+        btn6.setText("6");
+        btn6.setFocusPainted(false);
+        btn6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn6.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn6.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                btn6ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 50, 50));
+        jPanel2.add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 50, 50));
 
-        jButton17.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton17.setForeground(new java.awt.Color(55, 62, 71));
-        jButton17.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
-        jButton17.setText("3");
-        jButton17.setFocusPainted(false);
-        jButton17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton17.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton17.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        btn3.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btn3.setForeground(new java.awt.Color(55, 62, 71));
+        btn3.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
+        btn3.setText("3");
+        btn3.setFocusPainted(false);
+        btn3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn3.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn3.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                btn3ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 240, 50, 50));
+        jPanel2.add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 50, 50));
 
-        jButton18.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton18.setForeground(new java.awt.Color(55, 62, 71));
-        jButton18.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
-        jButton18.setText("2");
-        jButton18.setFocusPainted(false);
-        jButton18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton18.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton18.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
+        btn2.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btn2.setForeground(new java.awt.Color(55, 62, 71));
+        btn2.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
+        btn2.setText("2");
+        btn2.setFocusPainted(false);
+        btn2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn2.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn2.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
+                btn2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 50, 50));
+        jPanel2.add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 50, 50));
 
-        jButton19.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton19.setForeground(new java.awt.Color(55, 62, 71));
-        jButton19.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
-        jButton19.setText("1");
-        jButton19.setFocusPainted(false);
-        jButton19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton19.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton19.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        btn1.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btn1.setForeground(new java.awt.Color(55, 62, 71));
+        btn1.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
+        btn1.setText("1");
+        btn1.setFocusPainted(false);
+        btn1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn1.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn1.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                btn1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 50, 50));
+        jPanel2.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 50, 50));
 
-        jButton20.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton20.setForeground(new java.awt.Color(55, 62, 71));
-        jButton20.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
-        jButton20.setText("0");
-        jButton20.setFocusPainted(false);
-        jButton20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton20.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton20.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        btn_0.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btn_0.setForeground(new java.awt.Color(55, 62, 71));
+        btn_0.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
+        btn_0.setText("0");
+        btn_0.setFocusPainted(false);
+        btn_0.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_0.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_0.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn_0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                btn_0ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 50, 50));
+        jPanel2.add(btn_0, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 50, 50));
 
-        jButton21.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jButton21.setForeground(new java.awt.Color(55, 62, 71));
-        jButton21.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
-        jButton21.setText(".");
-        jButton21.setFocusPainted(false);
-        jButton21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton21.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        jButton21.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
+        btn_dot.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        btn_dot.setForeground(new java.awt.Color(55, 62, 71));
+        btn_dot.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
+        btn_dot.setText(".");
+        btn_dot.setFocusPainted(false);
+        btn_dot.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_dot.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_dot.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
+        btn_dot.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
+                btn_dotActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, 50, 50));
+        jPanel2.add(btn_dot, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 50, 50));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 350, 390));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 350, 410));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void btn_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CActionPerformed
+          txtOperaciom.setText("");
+          txtResultado.setText("");
+    }//GEN-LAST:event_btn_CActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        addNumber("8");
+    }//GEN-LAST:event_btn8ActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        addNumber("9");
+        
+    }//GEN-LAST:event_btn9ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        addNumber("4");
+    }//GEN-LAST:event_btn4ActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        addNumber("5");
+    }//GEN-LAST:event_btn5ActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+        addNumber("6");
+    }//GEN-LAST:event_btn6ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    private void btn_subtractionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_subtractionActionPerformed
+        addNumber("-");
+    }//GEN-LAST:event_btn_subtractionActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        addNumber("1");
+    }//GEN-LAST:event_btn1ActionPerformed
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        addNumber("2");
+    }//GEN-LAST:event_btn2ActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        addNumber("3");
+    }//GEN-LAST:event_btn3ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    private void btn_SumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SumActionPerformed
+        addNumber("+");
+    }//GEN-LAST:event_btn_SumActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    private void btn_equalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_equalActionPerformed
+        try {
+            String resultado = se.eval(txtOperaciom.getText()).toString();
+            txtResultado.setText(resultado);
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_btn_equalActionPerformed
 
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton21ActionPerformed
+    private void btn_dotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_dotActionPerformed
+        addNumber(".");
+    }//GEN-LAST:event_btn_dotActionPerformed
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
+    private void btn_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_0ActionPerformed
+        addNumber("0");
+    }//GEN-LAST:event_btn_0ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    private void btn_MultiplicationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_MultiplicationActionPerformed
+        addNumber("x");
+    }//GEN-LAST:event_btn_MultiplicationActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+        addNumber("7");
+    }//GEN-LAST:event_btn7ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void btn_expActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_expActionPerformed
+        addNumber("^");
+    }//GEN-LAST:event_btn_expActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void btn_percentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_percentActionPerformed
+        addNumber("%");
+    }//GEN-LAST:event_btn_percentActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    private void btn_divisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_divisionActionPerformed
+        addNumber("/");
+    }//GEN-LAST:event_btn_divisionActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -469,28 +478,30 @@ public class Calculadora extends javax.swing.JFrame {
             }
             });
     } 
-        
+    public void addNumber(String digito){
+        txtOperaciom.setText(txtOperaciom.getText() + digito);
+    }    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
+    private javax.swing.JButton btn6;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn8;
+    private javax.swing.JButton btn9;
+    private javax.swing.JButton btn_0;
+    private javax.swing.JButton btn_C;
+    private javax.swing.JButton btn_Multiplication;
+    private javax.swing.JButton btn_Sum;
+    private javax.swing.JButton btn_division;
+    private javax.swing.JButton btn_dot;
+    private javax.swing.JButton btn_equal;
+    private javax.swing.JButton btn_exp;
+    private javax.swing.JButton btn_percent;
+    private javax.swing.JButton btn_subtraction;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
