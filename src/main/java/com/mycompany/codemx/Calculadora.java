@@ -66,9 +66,9 @@ public class Calculadora extends javax.swing.JFrame {
         txtResultado.setForeground(new java.awt.Color(55, 62, 71));
         txtResultado.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         txtResultado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 300, 52));
+        jPanel1.add(txtResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 300, 52));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, -1));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 120));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -125,7 +125,7 @@ public class Calculadora extends javax.swing.JFrame {
         btn_division.setFocusPainted(false);
         btn_division.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_division.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
-        btn_division.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn1.png")); // NOI18N
+        btn_division.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn2.png")); // NOI18N
         btn_division.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_divisionActionPerformed(evt);
