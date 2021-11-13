@@ -16,6 +16,9 @@ public class Calculadora extends javax.swing.JFrame {
          
     }
 
+    double num1, num2, result;
+    String opr;
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -370,43 +373,57 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
         addNumber("8");
+        txtResultado.setText(txtResultado.getText() + "8");
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
         addNumber("9");
+        txtResultado.setText(txtResultado.getText() + "9");
         
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
         addNumber("4");
+        txtResultado.setText(txtResultado.getText() + "4");
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
         addNumber("5");
+        txtResultado.setText(txtResultado.getText() + "5");
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
         addNumber("6");
+        txtResultado.setText(txtResultado.getText() + "6");
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn_subtractionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_subtractionActionPerformed
         addNumber("-");
+        num1 = Double.parseDouble(txtResultado.getText());
+        txtResultado.setText("");
+        opr = "-";
     }//GEN-LAST:event_btn_subtractionActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         addNumber("1");
+        txtResultado.setText(txtResultado.getText() + "1");
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
         addNumber("2");
+        txtResultado.setText(txtResultado.getText() + "2");
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
         addNumber("3");
+        txtResultado.setText(txtResultado.getText() + "3");
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn_SumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SumActionPerformed
         addNumber("+");
+        num1 = Double.parseDouble(txtResultado.getText());
+        txtResultado.setText("");
+        opr = "+";
     }//GEN-LAST:event_btn_SumActionPerformed
 
     private void btn_equalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_equalActionPerformed
@@ -415,34 +432,72 @@ public class Calculadora extends javax.swing.JFrame {
             txtResultado.setText(resultado);
         } catch (Exception e) {
         }
+        num2 = Double.parseDouble(txtResultado.getText());
+        if(opr == "+"){
+            result = num1 + num2;
+            txtResultado.setText(Double.toString(result));
+        }else if(opr == "-"){
+            result = num1 - num2;
+            txtResultado.setText(Double.toString(result));
+        }else if(opr == "*"){
+            result = num1 * num2;
+            txtResultado.setText(Double.toString(result));
+        }else if(opr == "/"){
+            result = num1 / num2;
+            txtResultado.setText(Double.toString(result));
+        }else if (opr == "%"){
+            result = (num1 * num2) / 100;
+            txtResultado.setText(Double.toString(result));
+        }else{
+            result = num1;
+            for(double i = num1; i <= num2; i++){
+               result *= num1; 
+            }
+            txtResultado.setText(Double.toString(result));
+        }
     }//GEN-LAST:event_btn_equalActionPerformed
 
     private void btn_dotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_dotActionPerformed
         addNumber(".");
+        txtResultado.setText(txtResultado.getText() + ".");
     }//GEN-LAST:event_btn_dotActionPerformed
 
     private void btn_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_0ActionPerformed
         addNumber("0");
+        txtResultado.setText(txtResultado.getText() + "0");
     }//GEN-LAST:event_btn_0ActionPerformed
 
     private void btn_MultiplicationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_MultiplicationActionPerformed
         addNumber("x");
+        num1 = Double.parseDouble(txtResultado.getText());
+        txtResultado.setText("");
+        opr = "*";
     }//GEN-LAST:event_btn_MultiplicationActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
         addNumber("7");
+        txtResultado.setText(txtResultado.getText() + "7");
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn_expActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_expActionPerformed
         addNumber("^");
+        num1 = Double.parseDouble(txtResultado.getText());
+        txtResultado.setText("");
+        opr = "^";
     }//GEN-LAST:event_btn_expActionPerformed
 
     private void btn_percentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_percentActionPerformed
         addNumber("%");
+        num1 = Double.parseDouble(txtResultado.getText());
+        txtResultado.setText("");
+        opr = "%";
     }//GEN-LAST:event_btn_percentActionPerformed
 
     private void btn_divisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_divisionActionPerformed
         addNumber("/");
+        num1 = Double.parseDouble(txtResultado.getText());
+        txtResultado.setText("");
+        opr = "/";
     }//GEN-LAST:event_btn_divisionActionPerformed
 
     public static void main(String args[]) {
