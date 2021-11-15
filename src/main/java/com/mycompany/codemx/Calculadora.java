@@ -224,7 +224,7 @@ public class Calculadora extends javax.swing.JFrame {
 
         btn7.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         btn7.setForeground(new java.awt.Color(55, 62, 71));
-        btn7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/codemx/btn3.png"))); // NOI18N
+        btn7.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         btn7.setText("7");
         btn7.setFocusPainted(false);
         btn7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -329,7 +329,7 @@ public class Calculadora extends javax.swing.JFrame {
 
         btn1.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         btn1.setForeground(new java.awt.Color(55, 62, 71));
-        btn1.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\image\\btn3.png")); // NOI18N
+        btn1.setIcon(new javax.swing.ImageIcon("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btn3.png")); // NOI18N
         btn1.setText("1");
         btn1.setFocusPainted(false);
         btn1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -527,10 +527,16 @@ public class Calculadora extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         jPanel1.setBackground(Color.decode("#212b41"));
         jPanel2.setBackground(Color.decode("#2e3951"));
-        
-        btn1.setIcon(new ImageIcon(getClass().getResource("/Codemx/src/image/btDark50.png")));
+        imageIcon();
+       
+      //  btn1.setIcon(new ImageIcon(getClass().getResource("C:\\Users\\jogul\\OneDrive\\Documentos\\NetBeansProjects\\Codemx\\src\\main\\java\\com\\mycompany\\codemx\\btDark50.png")));
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    public void imageIcon(){
+        ImageIcon img = new ImageIcon(getClass().getResource("/codemx/btDark50.png"));
+        
+        btn1.setIcon(img);
+    }
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
